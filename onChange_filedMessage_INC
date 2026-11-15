@@ -1,0 +1,15 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || isTemplate) {
+        return;
+    }
+
+    g_form.hideFieldMsg('channel', true);
+
+    if (newValue == 'chat') {
+        g_form.showFieldMsg(
+            'channel',
+            'THIS INC IS received via Chat channel (medium)',
+            'info'
+        );
+    }
+}
