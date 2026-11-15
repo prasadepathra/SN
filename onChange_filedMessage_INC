@@ -3,13 +3,10 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
         return;
     }
 
-    g_form.hideFieldMsg('channel', true);
+    g_form.hideFieldMsg('contact_type', true);
 
     if (newValue == 'chat') {
-        g_form.showFieldMsg(
-            'channel',
-            'THIS INC IS received via Chat channel (medium)',
-            'info'
-        );
+        g_form.showFieldMsg('contact_type', 'THIS INC IS received via Chat channel (medium)', 'info');
+        //alert("channel changed to chat");
     }
 }
