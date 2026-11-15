@@ -1,3 +1,0 @@
-function onLoad() {
-    g_form.addInfoMessage('New incident form loaded and ready to use NOW');
-}
